@@ -45,7 +45,7 @@ def get_image_tag(image_path,transform,model):
     return res_string
 
 def get_all_tag(image_dir,pretrained,vit='swin_l',image_size = 512):
-    transform,model = set_model(pretrained,vit,image_size):
+    transform,model = set_model(pretrained,vit,image_size)
     image_paths = get_image_paths(image_dir)
     for image_path in image_paths:
         tag = get_image_tag(image_path,transform,model)
